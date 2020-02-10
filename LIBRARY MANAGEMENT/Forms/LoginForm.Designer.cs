@@ -28,12 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "LoginForm";
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LblPassword = new System.Windows.Forms.Label();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.BtnEnter = new System.Windows.Forms.Button();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(2, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(372, 262);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // LblPassword
+            // 
+            this.LblPassword.AutoSize = true;
+            this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPassword.Location = new System.Drawing.Point(72, 109);
+            this.LblPassword.Name = "LblPassword";
+            this.LblPassword.Size = new System.Drawing.Size(48, 18);
+            this.LblPassword.TabIndex = 1;
+            this.LblPassword.Text = "Şifrə:";
+            this.LblPassword.Click += new System.EventHandler(this.LblPassword_Click);
+            // 
+            // LblEmail
+            // 
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.Location = new System.Drawing.Point(41, 70);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(102, 16);
+            this.LblEmail.TabIndex = 2;
+            this.LblEmail.Text = "İstifadəçi Adı:";
+            // 
+            // BtnEnter
+            // 
+            this.BtnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEnter.Location = new System.Drawing.Point(190, 145);
+            this.BtnEnter.Name = "BtnEnter";
+            this.BtnEnter.Size = new System.Drawing.Size(87, 23);
+            this.BtnEnter.TabIndex = 3;
+            this.BtnEnter.Text = "Daxil Ol";
+            this.BtnEnter.UseVisualStyleBackColor = true;
+            this.BtnEnter.Click += new System.EventHandler(this.BtnEnter_Click);
+            // 
+            // TxtEmail
+            // 
+            this.TxtEmail.Location = new System.Drawing.Point(157, 66);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(157, 20);
+            this.TxtEmail.TabIndex = 4;
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.Location = new System.Drawing.Point(157, 107);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(157, 20);
+            this.TxtPassword.TabIndex = 5;
+            // 
+            // LoginForm
+            // 
+            this.ClientSize = new System.Drawing.Size(383, 261);
+            this.Controls.Add(this.LblEmail);
+            this.Controls.Add(this.TxtPassword);
+            this.Controls.Add(this.TxtEmail);
+            this.Controls.Add(this.BtnEnter);
+            this.Controls.Add(this.LblPassword);
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "LoginForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label LblPassword;
+        private System.Windows.Forms.Label LblEmail;
+        private System.Windows.Forms.Button BtnEnter;
+        private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.TextBox TxtPassword;
     }
 }

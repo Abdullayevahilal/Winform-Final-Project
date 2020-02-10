@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LIBRARY_MANAGEMENT
+namespace LIBRARY_MANAGEMENT.Forms
 {
-    public partial class Form1 : Form
+    public partial class CustomerForm : Form
     {
-        public Form1()
+        public CustomerForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void CustomerForm_Load(object sender, EventArgs e)
         {
 
         }
