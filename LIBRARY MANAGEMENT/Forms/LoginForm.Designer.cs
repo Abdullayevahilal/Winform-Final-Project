@@ -39,9 +39,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(2, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-5, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(372, 262);
+            this.pictureBox1.Size = new System.Drawing.Size(361, 258);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -49,32 +49,31 @@
             // LblPassword
             // 
             this.LblPassword.AutoSize = true;
-            this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPassword.Location = new System.Drawing.Point(72, 109);
+            this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPassword.Location = new System.Drawing.Point(67, 107);
             this.LblPassword.Name = "LblPassword";
-            this.LblPassword.Size = new System.Drawing.Size(48, 18);
+            this.LblPassword.Size = new System.Drawing.Size(79, 18);
             this.LblPassword.TabIndex = 1;
-            this.LblPassword.Text = "Şifrə:";
-            this.LblPassword.Click += new System.EventHandler(this.LblPassword_Click);
+            this.LblPassword.Text = "Password:";
             // 
             // LblEmail
             // 
             this.LblEmail.AutoSize = true;
-            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.Location = new System.Drawing.Point(41, 70);
+            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.Location = new System.Drawing.Point(64, 67);
             this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(102, 16);
+            this.LblEmail.Size = new System.Drawing.Size(81, 18);
             this.LblEmail.TabIndex = 2;
-            this.LblEmail.Text = "İstifadəçi Adı:";
+            this.LblEmail.Text = "Username:";
             // 
             // BtnEnter
             // 
-            this.BtnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEnter.Location = new System.Drawing.Point(190, 145);
+            this.BtnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEnter.Location = new System.Drawing.Point(157, 142);
             this.BtnEnter.Name = "BtnEnter";
-            this.BtnEnter.Size = new System.Drawing.Size(87, 23);
+            this.BtnEnter.Size = new System.Drawing.Size(157, 23);
             this.BtnEnter.TabIndex = 3;
-            this.BtnEnter.Text = "Daxil Ol";
+            this.BtnEnter.Text = "LOG IN";
             this.BtnEnter.UseVisualStyleBackColor = true;
             this.BtnEnter.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
@@ -94,7 +93,7 @@
             // 
             // LoginForm
             // 
-            this.ClientSize = new System.Drawing.Size(383, 261);
+            this.ClientSize = new System.Drawing.Size(357, 261);
             this.Controls.Add(this.LblEmail);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtEmail);
@@ -102,6 +101,7 @@
             this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.pictureBox1);
             this.Name = "LoginForm";
+        
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

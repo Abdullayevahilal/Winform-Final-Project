@@ -26,6 +26,8 @@ namespace LIBRARY_MANAGEMENT.Forms
 
         private void BtnEnter_Click(object sender, EventArgs e)
         {
+            //TxtEmail.Text = (Crypto.HashPassword("4202084"));
+            //MessageBox.Show(Crypto.HashPassword("4202084"));
             if (string.IsNullOrEmpty(TxtEmail.Text))
             {
                 MessageBox.Show("E-Poçt Yazın");
@@ -34,15 +36,18 @@ namespace LIBRARY_MANAGEMENT.Forms
             }
             if (string.IsNullOrEmpty(TxtPassword.Text))
             {
-                 MessageBox.Show("Şifrə yazın");
-                  return;
+                MessageBox.Show("Şifrə yazın");
+                return;
             }
-         
-            Manager Manager=_context.Managers.FirstOrDefault(m=>m.Status && m.Email==TxtEmail.Text && m.Password == TxtPassword.Text);
-            if (Manager != null)
+
+            Manager manager = _context.Managers.FirstOrDefault
+                (m => m.Status && m.Email == TxtEmail.Text);
+            
+            if (manager != null && Crypto.VerifyHashedPassword(manager.Password,TxtPassword.Text))
             {
                 DashboardForm dashboard = new DashboardForm();
-                dashboard.Show();
+               
+                dashboard.ShowDialog();
 
                 this.Hide();
                 return;
@@ -53,9 +58,7 @@ namespace LIBRARY_MANAGEMENT.Forms
 
         }
 
-        private void LblPassword_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
-}
+    }
+

@@ -18,7 +18,7 @@ namespace LIBRARY_MANAGEMENT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new DashboardForm());
         }
     }
 }

@@ -66,11 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\LibraryDbContext.cs" />
-    <Compile Include="Forms\Book.cs">
+    <Compile Include="Forms\BookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Book.Designer.cs">
-      <DependentUpon>Book.cs</DependentUpon>
+    <Compile Include="Forms\BookForm.Designer.cs">
+      <DependentUpon>BookForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CustomerForm.cs">
       <SubType>Form</SubType>
@@ -90,9 +90,19 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202002101249189_CustomerAndManagerAndBookAndOrderBookAndOrderAndGenre.cs" />
     <Compile Include="Migrations\202002101249189_CustomerAndManagerAndBookAndOrderBookAndOrderAndGenre.designer.cs">
       <DependentUpon>202002101249189_CustomerAndManagerAndBookAndOrderBookAndOrderAndGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002121101249_AddForeignKeyToBookGenre.cs" />
+    <Compile Include="Migrations\202002121101249_AddForeignKeyToBookGenre.designer.cs">
+      <DependentUpon>202002121101249_AddForeignKeyToBookGenre.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
@@ -104,8 +114,8 @@
     <Compile Include="Models\OrderBook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Book.resx">
-      <DependentUpon>Book.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BookForm.resx">
+      <DependentUpon>BookForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
@@ -116,8 +126,14 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002101249189_CustomerAndManagerAndBookAndOrderBookAndOrderAndGenre.resx">
       <DependentUpon>202002101249189_CustomerAndManagerAndBookAndOrderBookAndOrderAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002121101249_AddForeignKeyToBookGenre.resx">
+      <DependentUpon>202002121101249_AddForeignKeyToBookGenre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
