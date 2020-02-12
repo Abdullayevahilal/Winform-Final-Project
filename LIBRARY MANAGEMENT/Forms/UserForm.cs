@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using LIBRARY_MANAGEMENT.Data;
 using LIBRARY_MANAGEMENT.Models;
 
@@ -72,8 +71,39 @@ namespace LIBRARY_MANAGEMENT.Forms
         {
             if (string.IsNullOrEmpty(TxtFullName.Text) &&
            string.IsNullOrEmpty(TxtPhone.Text))
+            {
+                MessageBox.Show("Please Add FullName or Phone ");
+                return;
+            }
+            var user = _context.Managers
+                                    .Where(u => u.Status && (TxtFullName.Text != string.Empty ? u.Fullname.Contains(TxtFullName.Text) : false) ||
+                                                            (TxtPhone.Text != string.Empty ? u.Phone.Contains(TxtPhone.Text) : false))
+                                    .ToList();
+            DgvAddUsers.Rows.Clear();
+
+            foreach (var item in user)
+            {
+                DgvAddUsers.Rows.Add(item.Id,
+                                     item.Status,
+                                     item.Fullname,
+                                     item.Phone,
+                                     item.Email,
+                                     item.Password); 
+            }
+        } //User search method
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnUserDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
-}
+        }
+    
+
     
 

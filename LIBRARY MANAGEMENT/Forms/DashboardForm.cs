@@ -24,12 +24,11 @@ namespace LIBRARY_MANAGEMENT.Forms
       
 
         private void BtnBook_Click(object sender, EventArgs e)
-        { BookForm book = new BookForm();
+        { 
+            BookForm book = new BookForm();
             book.ShowDialog();
-
             this.Close();
             return;
-
         }
 
         private void BtnUser_Click(object sender, EventArgs e)

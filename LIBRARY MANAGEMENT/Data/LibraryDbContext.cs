@@ -21,7 +21,6 @@ namespace LIBRARY_MANAGEMENT.Data
         public DbSet<Book> Books { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet <OrderBook> OrderBooks { get; set; }
 
        
 

@@ -135,6 +135,7 @@
             this.BtnBookAdd.TabIndex = 11;
             this.BtnBookAdd.Text = "Add";
             this.BtnBookAdd.UseVisualStyleBackColor = false;
+            this.BtnBookAdd.Click += new System.EventHandler(this.BtnBookAdd_Click);
             // 
             // BtnUpdate
             // 
@@ -146,6 +147,7 @@
             this.BtnUpdate.TabIndex = 12;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = false;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnDelete
             // 
@@ -156,6 +158,7 @@
             this.BtnDelete.TabIndex = 13;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = false;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnSearch
             // 
@@ -166,7 +169,7 @@
             this.BtnSearch.TabIndex = 14;
             this.BtnSearch.Text = "Search";
             this.BtnSearch.UseVisualStyleBackColor = false;
-            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click_1);
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // DgvAddBooks
             // 
@@ -183,6 +186,8 @@
             this.DgvAddBooks.Name = "DgvAddBooks";
             this.DgvAddBooks.Size = new System.Drawing.Size(504, 241);
             this.DgvAddBooks.TabIndex = 15;
+            this.DgvAddBooks.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddBooks_CellMouseClick);
+            this.DgvAddBooks.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddBooks_RowHeaderMouseClick);
             // 
             // Column1
             // 
@@ -247,7 +252,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "BookForm";
             this.Text = "Book";
-           
+            this.Load += new System.EventHandler(this.BookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvAddBooks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

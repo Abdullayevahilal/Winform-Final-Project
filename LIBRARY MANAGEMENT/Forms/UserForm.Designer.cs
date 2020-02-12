@@ -72,6 +72,7 @@
             this.BtnUserDelete.TabIndex = 28;
             this.BtnUserDelete.Text = "Delete";
             this.BtnUserDelete.UseVisualStyleBackColor = false;
+            this.BtnUserDelete.Click += new System.EventHandler(this.BtnUserDelete_Click);
             // 
             // BtnUserUpdate
             // 
@@ -225,6 +226,7 @@
             this.Controls.Add(this.TxtFullName);
             this.Name = "UserForm";
             this.Text = "UserForm";
+            this.Load += new System.EventHandler(this.UserForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvAddUsers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

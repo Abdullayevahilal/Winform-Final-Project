@@ -104,14 +104,18 @@
     <Compile Include="Migrations\202002121101249_AddForeignKeyToBookGenre.designer.cs">
       <DependentUpon>202002121101249_AddForeignKeyToBookGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002121252097_OrderCreat.cs" />
+    <Compile Include="Migrations\202002121252097_OrderCreat.designer.cs">
+      <DependentUpon>202002121252097_OrderCreat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\CmbCombobox.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Extensions.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderBook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BookForm.resx">
@@ -134,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002121101249_AddForeignKeyToBookGenre.resx">
       <DependentUpon>202002121101249_AddForeignKeyToBookGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002121252097_OrderCreat.resx">
+      <DependentUpon>202002121252097_OrderCreat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
