@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LIBRARY_MANAGEMENT.Data;
 using LIBRARY_MANAGEMENT.Models;
+using CryptoHelper;
 
 namespace LIBRARY_MANAGEMENT.Forms
 {
     public partial class UserForm : Form
     {
+        private int _id;
+        private Manager _user;
         private readonly LibraryDbContext _context;
         public UserForm()
         {
@@ -27,6 +30,7 @@ namespace LIBRARY_MANAGEMENT.Forms
         private void FillUsers()
         {
             var ShowUser = _context.Managers.ToList();
+            DgvAddUsers.Rows.Clear();
             foreach (var item in ShowUser)
             {
                 DgvAddUsers.Rows.Add(item.Id,
@@ -37,7 +41,15 @@ namespace LIBRARY_MANAGEMENT.Forms
                                      item.Password);
             }
         }
-
+        private void Clear()
+        {
+            TxtFullName.Clear();
+            TxtPhone.Clear();
+            TxtUserEmail.Clear();
+            TxtPassword.Clear();
+           
+        }
+        //Create And Read Method
         private void BtnUserAdd_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtFullName.Text) ||
@@ -50,7 +62,7 @@ namespace LIBRARY_MANAGEMENT.Forms
                     Fullname = TxtFullName.Text,
                     Phone = TxtPhone.Text,
                     Email = TxtUserEmail.Text,
-                    Password = TxtPassword.Text,
+                    Password =Crypto.HashPassword(TxtPassword.Text),
                     Level = UserLevel.user,
                     Status = true
 
@@ -64,9 +76,12 @@ namespace LIBRARY_MANAGEMENT.Forms
             }
             DgvAddUsers.Rows.Clear();
             FillUsers();
+            Clear();
 
         }
+        //End of Create And Read Method
 
+        //Search Method
         private void BtnUserSearch_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(TxtFullName.Text) &&
@@ -88,19 +103,52 @@ namespace LIBRARY_MANAGEMENT.Forms
                                      item.Fullname,
                                      item.Phone,
                                      item.Email,
-                                     item.Password); 
+                                     item.Password);
+                Clear();
             }
         } //User search method
-
+        // End of search method
         private void UserForm_Load(object sender, EventArgs e)
         {
-
+            FillUsers();
         }
-
+        //Delete Method
         private void BtnUserDelete_Click(object sender, EventArgs e)
         {
-
+            _context.Managers.Remove(_user);
+            _context.SaveChanges();
+            FillUsers();
+            Clear();
         }
+        //End of Delete Method
+        private void DgvAddUsers_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            TxtFullName.Text = _user.Fullname;
+            TxtPhone.Text = _user.Phone;
+            TxtUserEmail.Text = _user.Email;
+            TxtPassword.Text = _user.Password;
+         
+        }
+
+        private void DgvAddUsers_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            _id = (int)DgvAddUsers.Rows[e.RowIndex].Cells[0].Value;
+            _user = _context.Managers.Find(_id);
+        }
+        //Update Method
+        private void BtnUserUpdate_Click(object sender, EventArgs e)
+        {
+            Manager user = _context.Managers.Find(_user.Id);
+            user.Fullname = TxtFullName.Text;
+            user.Phone = TxtPhone.Text;
+            user.Email = TxtUserEmail.Text;
+            user.Password= TxtPassword.Text;
+
+            _context.SaveChanges();
+            FillUsers();
+            Clear();
+        }
+        //End of Update Method
     }
         }
     

@@ -84,6 +84,7 @@
             this.BtnUserUpdate.TabIndex = 27;
             this.BtnUserUpdate.Text = "Update";
             this.BtnUserUpdate.UseVisualStyleBackColor = false;
+            this.BtnUserUpdate.Click += new System.EventHandler(this.BtnUserUpdate_Click);
             // 
             // BtnUserAdd
             // 
@@ -173,18 +174,22 @@
             this.Column6});
             this.DgvAddUsers.Location = new System.Drawing.Point(3, 172);
             this.DgvAddUsers.Name = "DgvAddUsers";
-            this.DgvAddUsers.Size = new System.Drawing.Size(639, 276);
+            this.DgvAddUsers.Size = new System.Drawing.Size(445, 276);
             this.DgvAddUsers.TabIndex = 30;
+            this.DgvAddUsers.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddUsers_CellMouseClick);
+            this.DgvAddUsers.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddUsers_RowHeaderMouseClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Id";
             this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Status";
             this.Column2.Name = "Column2";
+            this.Column2.Visible = false;
             // 
             // Column3
             // 
@@ -210,7 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 450);
+            this.ClientSize = new System.Drawing.Size(490, 450);
             this.Controls.Add(this.DgvAddUsers);
             this.Controls.Add(this.BtnUserSearch);
             this.Controls.Add(this.BtnUserDelete);
