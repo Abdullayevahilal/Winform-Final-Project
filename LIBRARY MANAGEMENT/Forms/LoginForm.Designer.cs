@@ -39,9 +39,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-5, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(361, 258);
+            this.pictureBox1.Size = new System.Drawing.Size(357, 258);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -100,7 +100,8 @@
             this.Controls.Add(this.BtnEnter);
             this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "LoginForm";         
+            this.Name = "LoginForm";
+         
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
