@@ -128,6 +128,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "DashboardForm";
             this.Text = "Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
