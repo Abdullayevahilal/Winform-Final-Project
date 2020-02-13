@@ -100,8 +100,7 @@
             this.Controls.Add(this.BtnEnter);
             this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "LoginForm";
-        
+            this.Name = "LoginForm";         
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -21,8 +21,7 @@ namespace LIBRARY_MANAGEMENT.Forms
         _context = new LibraryDbContext();
     }
 
-      
-
+         //Open BookForm
         private void BtnBook_Click(object sender, EventArgs e)
         { 
             BookForm book = new BookForm();
@@ -30,11 +29,20 @@ namespace LIBRARY_MANAGEMENT.Forms
             this.Close();
             return;
         }
-
+        //Open UserForm
         private void BtnUser_Click(object sender, EventArgs e)
         {
             UserForm user = new UserForm();
             user.ShowDialog();
+
+            this.Close();
+            return;
+        }
+        //Open CustomerForm
+        private void BtnCustomer_Click(object sender, EventArgs e)
+        {
+            CustomerForm Customer = new CustomerForm();
+            Customer.ShowDialog();
 
             this.Close();
             return;

@@ -28,151 +28,285 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GrbCustomer = new System.Windows.Forms.GroupBox();
-            this.BtnCancelCustomer = new System.Windows.Forms.Button();
-            this.LblReservationDate = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.LblPhone = new System.Windows.Forms.Label();
-            this.LblSurname = new System.Windows.Forms.Label();
             this.LblName = new System.Windows.Forms.Label();
-            this.BtnAddCustomer = new System.Windows.Forms.Button();
-            this.GrbCustomer.SuspendLayout();
+            this.LblSurname = new System.Windows.Forms.Label();
+            this.LblPhone = new System.Windows.Forms.Label();
+            this.TxtCustomerName = new System.Windows.Forms.TextBox();
+            this.TxtCustomerSurname = new System.Windows.Forms.TextBox();
+            this.TxtCustomerPhone = new System.Windows.Forms.TextBox();
+            this.TxtCustomerEmail = new System.Windows.Forms.TextBox();
+            this.LblCustomerEmail = new System.Windows.Forms.Label();
+            this.BtnCustomerSearch = new System.Windows.Forms.Button();
+            this.BtnCustomerDelete = new System.Windows.Forms.Button();
+            this.BtnCustomerUpdate = new System.Windows.Forms.Button();
+            this.BtnCustomerAdd = new System.Windows.Forms.Button();
+            this.DgvAddCustomer = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TxtCustomerIdNumber = new System.Windows.Forms.TextBox();
+            this.LblIdNumber = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAddCustomer)).BeginInit();
             this.SuspendLayout();
-            // 
-            // GrbCustomer
-            // 
-            this.GrbCustomer.Controls.Add(this.BtnCancelCustomer);
-            this.GrbCustomer.Controls.Add(this.LblReservationDate);
-            this.GrbCustomer.Controls.Add(this.textBox4);
-            this.GrbCustomer.Controls.Add(this.textBox3);
-            this.GrbCustomer.Controls.Add(this.textBox2);
-            this.GrbCustomer.Controls.Add(this.textBox1);
-            this.GrbCustomer.Controls.Add(this.LblPhone);
-            this.GrbCustomer.Controls.Add(this.LblSurname);
-            this.GrbCustomer.Controls.Add(this.LblName);
-            this.GrbCustomer.Controls.Add(this.BtnAddCustomer);
-            this.GrbCustomer.Location = new System.Drawing.Point(12, 22);
-            this.GrbCustomer.Name = "GrbCustomer";
-            this.GrbCustomer.Size = new System.Drawing.Size(273, 250);
-            this.GrbCustomer.TabIndex = 1;
-            this.GrbCustomer.TabStop = false;
-            this.GrbCustomer.Text = "Müştərilər";
-            // 
-            // BtnCancelCustomer
-            // 
-            this.BtnCancelCustomer.BackColor = System.Drawing.SystemColors.Highlight;
-            this.BtnCancelCustomer.Location = new System.Drawing.Point(140, 166);
-            this.BtnCancelCustomer.Name = "BtnCancelCustomer";
-            this.BtnCancelCustomer.Size = new System.Drawing.Size(100, 23);
-            this.BtnCancelCustomer.TabIndex = 11;
-            this.BtnCancelCustomer.Text = "İmtina Et";
-            this.BtnCancelCustomer.UseVisualStyleBackColor = false;
-            // 
-            // LblReservationDate
-            // 
-            this.LblReservationDate.AutoSize = true;
-            this.LblReservationDate.Location = new System.Drawing.Point(6, 118);
-            this.LblReservationDate.Name = "LblReservationDate";
-            this.LblReservationDate.Size = new System.Drawing.Size(77, 13);
-            this.LblReservationDate.TabIndex = 10;
-            this.LblReservationDate.Text = "Qeydiyyat tarixi";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(104, 118);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(104, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(104, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(104, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // LblPhone
-            // 
-            this.LblPhone.AutoSize = true;
-            this.LblPhone.Location = new System.Drawing.Point(21, 84);
-            this.LblPhone.Name = "LblPhone";
-            this.LblPhone.Size = new System.Drawing.Size(43, 13);
-            this.LblPhone.TabIndex = 3;
-            this.LblPhone.Text = "Telefon";
-            // 
-            // LblSurname
-            // 
-            this.LblSurname.AutoSize = true;
-            this.LblSurname.Location = new System.Drawing.Point(21, 59);
-            this.LblSurname.Name = "LblSurname";
-            this.LblSurname.Size = new System.Drawing.Size(39, 13);
-            this.LblSurname.TabIndex = 2;
-            this.LblSurname.Text = "Soyadı";
             // 
             // LblName
             // 
             this.LblName.AutoSize = true;
-            this.LblName.Location = new System.Drawing.Point(21, 28);
+            this.LblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblName.Location = new System.Drawing.Point(16, 10);
+            this.LblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblName.Name = "LblName";
-            this.LblName.Size = new System.Drawing.Size(22, 13);
+            this.LblName.Size = new System.Drawing.Size(39, 13);
             this.LblName.TabIndex = 1;
-            this.LblName.Text = "Adı";
+            this.LblName.Text = "Name";
             // 
-            // BtnAddCustomer
+            // LblSurname
             // 
-            this.BtnAddCustomer.BackColor = System.Drawing.SystemColors.Highlight;
-            this.BtnAddCustomer.Location = new System.Drawing.Point(24, 166);
-            this.BtnAddCustomer.Name = "BtnAddCustomer";
-            this.BtnAddCustomer.Size = new System.Drawing.Size(100, 23);
-            this.BtnAddCustomer.TabIndex = 0;
-            this.BtnAddCustomer.Text = "Əlavə Et";
-            this.BtnAddCustomer.UseVisualStyleBackColor = false;
+            this.LblSurname.AutoSize = true;
+            this.LblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSurname.Location = new System.Drawing.Point(147, 10);
+            this.LblSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSurname.Name = "LblSurname";
+            this.LblSurname.Size = new System.Drawing.Size(56, 13);
+            this.LblSurname.TabIndex = 2;
+            this.LblSurname.Text = "Surname";
+            // 
+            // LblPhone
+            // 
+            this.LblPhone.AutoSize = true;
+            this.LblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPhone.Location = new System.Drawing.Point(283, 10);
+            this.LblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblPhone.Name = "LblPhone";
+            this.LblPhone.Size = new System.Drawing.Size(43, 13);
+            this.LblPhone.TabIndex = 3;
+            this.LblPhone.Text = "Phone";
+            // 
+            // TxtCustomerName
+            // 
+            this.TxtCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerName.Location = new System.Drawing.Point(16, 29);
+            this.TxtCustomerName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TxtCustomerName.Name = "TxtCustomerName";
+            this.TxtCustomerName.Size = new System.Drawing.Size(108, 20);
+            this.TxtCustomerName.TabIndex = 4;
+            // 
+            // TxtCustomerSurname
+            // 
+            this.TxtCustomerSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerSurname.Location = new System.Drawing.Point(145, 29);
+            this.TxtCustomerSurname.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TxtCustomerSurname.Name = "TxtCustomerSurname";
+            this.TxtCustomerSurname.Size = new System.Drawing.Size(116, 20);
+            this.TxtCustomerSurname.TabIndex = 5;
+            // 
+            // TxtCustomerPhone
+            // 
+            this.TxtCustomerPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerPhone.Location = new System.Drawing.Point(282, 29);
+            this.TxtCustomerPhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TxtCustomerPhone.Name = "TxtCustomerPhone";
+            this.TxtCustomerPhone.Size = new System.Drawing.Size(123, 20);
+            this.TxtCustomerPhone.TabIndex = 6;
+            // 
+            // TxtCustomerEmail
+            // 
+            this.TxtCustomerEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerEmail.Location = new System.Drawing.Point(424, 29);
+            this.TxtCustomerEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TxtCustomerEmail.Name = "TxtCustomerEmail";
+            this.TxtCustomerEmail.Size = new System.Drawing.Size(131, 20);
+            this.TxtCustomerEmail.TabIndex = 7;
+            // 
+            // LblCustomerEmail
+            // 
+            this.LblCustomerEmail.AutoSize = true;
+            this.LblCustomerEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCustomerEmail.Location = new System.Drawing.Point(424, 10);
+            this.LblCustomerEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCustomerEmail.Name = "LblCustomerEmail";
+            this.LblCustomerEmail.Size = new System.Drawing.Size(37, 13);
+            this.LblCustomerEmail.TabIndex = 10;
+            this.LblCustomerEmail.Text = "Email";
+            // 
+            // BtnCustomerSearch
+            // 
+            this.BtnCustomerSearch.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnCustomerSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCustomerSearch.Location = new System.Drawing.Point(425, 98);
+            this.BtnCustomerSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BtnCustomerSearch.Name = "BtnCustomerSearch";
+            this.BtnCustomerSearch.Size = new System.Drawing.Size(93, 39);
+            this.BtnCustomerSearch.TabIndex = 33;
+            this.BtnCustomerSearch.Text = "Search";
+            this.BtnCustomerSearch.UseVisualStyleBackColor = false;
+            this.BtnCustomerSearch.Click += new System.EventHandler(this.BtnCustomerSearch_Click);
+            // 
+            // BtnCustomerDelete
+            // 
+            this.BtnCustomerDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnCustomerDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCustomerDelete.Location = new System.Drawing.Point(303, 97);
+            this.BtnCustomerDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BtnCustomerDelete.Name = "BtnCustomerDelete";
+            this.BtnCustomerDelete.Size = new System.Drawing.Size(93, 40);
+            this.BtnCustomerDelete.TabIndex = 32;
+            this.BtnCustomerDelete.Text = "Delete";
+            this.BtnCustomerDelete.UseVisualStyleBackColor = false;
+            this.BtnCustomerDelete.Click += new System.EventHandler(this.BtnCustomerDelete_Click);
+            // 
+            // BtnCustomerUpdate
+            // 
+            this.BtnCustomerUpdate.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnCustomerUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCustomerUpdate.Location = new System.Drawing.Point(175, 97);
+            this.BtnCustomerUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BtnCustomerUpdate.Name = "BtnCustomerUpdate";
+            this.BtnCustomerUpdate.Size = new System.Drawing.Size(95, 40);
+            this.BtnCustomerUpdate.TabIndex = 31;
+            this.BtnCustomerUpdate.Text = "Update";
+            this.BtnCustomerUpdate.UseVisualStyleBackColor = false;
+            this.BtnCustomerUpdate.Click += new System.EventHandler(this.BtnCustomerUpdate_Click);
+            // 
+            // BtnCustomerAdd
+            // 
+            this.BtnCustomerAdd.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnCustomerAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCustomerAdd.Location = new System.Drawing.Point(33, 95);
+            this.BtnCustomerAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BtnCustomerAdd.Name = "BtnCustomerAdd";
+            this.BtnCustomerAdd.Size = new System.Drawing.Size(96, 43);
+            this.BtnCustomerAdd.TabIndex = 30;
+            this.BtnCustomerAdd.Text = "Add";
+            this.BtnCustomerAdd.UseVisualStyleBackColor = false;
+            this.BtnCustomerAdd.Click += new System.EventHandler(this.BtnCustomerAdd_Click);
+            // 
+            // DgvAddCustomer
+            // 
+            this.DgvAddCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvAddCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.DgvAddCustomer.Location = new System.Drawing.Point(16, 195);
+            this.DgvAddCustomer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.DgvAddCustomer.Name = "DgvAddCustomer";
+            this.DgvAddCustomer.Size = new System.Drawing.Size(551, 264);
+            this.DgvAddCustomer.TabIndex = 34;
+            this.DgvAddCustomer.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddCustomer_CellMouseClick);
+            this.DgvAddCustomer.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddCustomer_RowHeaderMouseClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Name";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Surname";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Phone";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Email";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "ID Number";
+            this.Column6.Name = "Column6";
+            // 
+            // TxtCustomerIdNumber
+            // 
+            this.TxtCustomerIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerIdNumber.Location = new System.Drawing.Point(574, 29);
+            this.TxtCustomerIdNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TxtCustomerIdNumber.Name = "TxtCustomerIdNumber";
+            this.TxtCustomerIdNumber.Size = new System.Drawing.Size(118, 20);
+            this.TxtCustomerIdNumber.TabIndex = 35;
+            // 
+            // LblIdNumber
+            // 
+            this.LblIdNumber.AutoSize = true;
+            this.LblIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblIdNumber.Location = new System.Drawing.Point(573, 10);
+            this.LblIdNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblIdNumber.Name = "LblIdNumber";
+            this.LblIdNumber.Size = new System.Drawing.Size(67, 13);
+            this.LblIdNumber.TabIndex = 36;
+            this.LblIdNumber.Text = "ID Number";
             // 
             // CustomerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(371, 315);
-            this.Controls.Add(this.GrbCustomer);
+            this.ClientSize = new System.Drawing.Size(788, 453);
+            this.Controls.Add(this.TxtCustomerIdNumber);
+            this.Controls.Add(this.LblIdNumber);
+            this.Controls.Add(this.DgvAddCustomer);
+            this.Controls.Add(this.BtnCustomerSearch);
+            this.Controls.Add(this.BtnCustomerDelete);
+            this.Controls.Add(this.BtnCustomerUpdate);
+            this.Controls.Add(this.BtnCustomerAdd);
+            this.Controls.Add(this.TxtCustomerEmail);
+            this.Controls.Add(this.LblCustomerEmail);
+            this.Controls.Add(this.TxtCustomerName);
+            this.Controls.Add(this.LblName);
+            this.Controls.Add(this.TxtCustomerPhone);
+            this.Controls.Add(this.TxtCustomerSurname);
+            this.Controls.Add(this.LblPhone);
+            this.Controls.Add(this.LblSurname);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
-            this.GrbCustomer.ResumeLayout(false);
-            this.GrbCustomer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAddCustomer)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox GrbCustomer;
-        private System.Windows.Forms.Label LblReservationDate;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label LblPhone;
-        private System.Windows.Forms.Label LblSurname;
         private System.Windows.Forms.Label LblName;
-        private System.Windows.Forms.Button BtnAddCustomer;
-        private System.Windows.Forms.Button BtnCancelCustomer;
+        private System.Windows.Forms.Label LblSurname;
+        private System.Windows.Forms.Label LblPhone;
+        private System.Windows.Forms.TextBox TxtCustomerName;
+        private System.Windows.Forms.TextBox TxtCustomerSurname;
+        private System.Windows.Forms.TextBox TxtCustomerPhone;
+        private System.Windows.Forms.TextBox TxtCustomerEmail;
+        private System.Windows.Forms.Label LblCustomerEmail;
+        private System.Windows.Forms.Button BtnCustomerSearch;
+        private System.Windows.Forms.Button BtnCustomerDelete;
+        private System.Windows.Forms.Button BtnCustomerUpdate;
+        private System.Windows.Forms.Button BtnCustomerAdd;
+        private System.Windows.Forms.DataGridView DgvAddCustomer;
+        private System.Windows.Forms.TextBox TxtCustomerIdNumber;
+        private System.Windows.Forms.Label LblIdNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
