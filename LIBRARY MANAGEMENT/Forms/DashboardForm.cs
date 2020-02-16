@@ -21,40 +21,44 @@ namespace LIBRARY_MANAGEMENT.Forms
         _context = new LibraryDbContext();
     }
 
-         //Open BookForm
-        private void BtnBook_Click(object sender, EventArgs e)
-        { 
-            BookForm book = new BookForm();
-            book.ShowDialog();
-        }
-        //Open UserForm
-        private void BtnUser_Click(object sender, EventArgs e)
+        private void DashboardForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            UserForm user = new UserForm();
-            user.ShowDialog();
+            Application.Exit();
         }
-        //Open CustomerForm
-        private void BtnCustomer_Click(object sender, EventArgs e)
+        private void BtnCustomer_Click_1(object sender, EventArgs e)
         {
             CustomerForm Customer = new CustomerForm();
             Customer.ShowDialog();
         }
 
-        private void BtnOrder_Click(object sender, EventArgs e)
+        private void BtnOrder_Click_1(object sender, EventArgs e)
         {
             OrderForm Order = new OrderForm();
             Order.ShowDialog();
         }
 
-        private void BtnReturnBook_Click(object sender, EventArgs e)
+        private void BtnReturn_Click(object sender, EventArgs e)
         {
             ReturnOrderBookForm Return = new ReturnOrderBookForm();
             Return.ShowDialog();
         }
 
-        private void DashboardForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void BtnBook_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            BookForm book = new BookForm();
+            book.ShowDialog();
+        }
+
+        private void BtnUser_Click_1(object sender, EventArgs e)
+        {
+            UserForm user = new UserForm();
+            user.ShowDialog();
+        }
+
+        private void BtnReport_Click_1(object sender, EventArgs e)
+        {
+            ReportForm Report = new ReportForm();
+            Report.Show();
         }
     }
 }

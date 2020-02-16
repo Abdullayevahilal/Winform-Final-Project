@@ -68,13 +68,15 @@
             // 
             // BtnEnter
             // 
+            this.BtnEnter.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEnter.Location = new System.Drawing.Point(131, 142);
+            this.BtnEnter.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnEnter.Location = new System.Drawing.Point(136, 143);
             this.BtnEnter.Name = "BtnEnter";
             this.BtnEnter.Size = new System.Drawing.Size(157, 33);
             this.BtnEnter.TabIndex = 3;
             this.BtnEnter.Text = "LOG IN";
-            this.BtnEnter.UseVisualStyleBackColor = true;
+            this.BtnEnter.UseVisualStyleBackColor = false;
             this.BtnEnter.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // TxtEmail
