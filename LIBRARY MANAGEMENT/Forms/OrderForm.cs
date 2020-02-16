@@ -169,7 +169,7 @@ namespace LIBRARY_MANAGEMENT.Forms
             
             if (DtpOrderTime.Value != DateTime.Now)
             {
-Order orders = new Order
+                   Order orders = new Order
                 {
                     CustomerId = _selectedCustomer.Id,
                     BookId = _selectedBook.Id,
@@ -202,7 +202,7 @@ Order orders = new Order
         //Delete Order Method
         private void BtnDeleteOrder_Click(object sender, EventArgs e)
         {
-            DialogResult r = MessageBox.Show("Delete?", "Are you sure?", MessageBoxButtons.YesNo);
+            DialogResult r = MessageBox.Show("Are you Sure?", "Yes", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (r == DialogResult.Yes)
             {
                 _context.Orders.Remove(_selectedOrder);
