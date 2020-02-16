@@ -262,7 +262,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(573, 453);
+            this.ClientSize = new System.Drawing.Size(559, 453);
             this.Controls.Add(this.TxtCustomerIdNumber);
             this.Controls.Add(this.LblIdNumber);
             this.Controls.Add(this.DgvAddCustomer);

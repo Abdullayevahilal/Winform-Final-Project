@@ -28,7 +28,7 @@ namespace LIBRARY_MANAGEMENT.Forms
         {
             FillCustomers();
         }
-
+        //Fill Customers to DataGridView
         private void FillCustomers()
         {
             var ShowUser = _context.Customers.ToList();
@@ -56,57 +56,79 @@ namespace LIBRARY_MANAGEMENT.Forms
         //Create and Read Method
         private void BtnCustomerAdd_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(TxtCustomerName.Text) ||
-             !string.IsNullOrEmpty(TxtCustomerSurname.Text) ||
-             !string.IsNullOrEmpty(TxtCustomerPhone.Text) ||
-             !string.IsNullOrEmpty(TxtCustomerEmail.Text) ||
-             !string.IsNullOrEmpty(TxtCustomerIdNumber.Text))
+            DialogResult r = MessageBox.Show("Are you Sure?", "Yes", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (r == DialogResult.Yes)
             {
-                Customer customer = new Customer//add user to database
+                if (!string.IsNullOrEmpty(TxtCustomerName.Text) ||
+                 !string.IsNullOrEmpty(TxtCustomerSurname.Text) ||
+                 !string.IsNullOrEmpty(TxtCustomerPhone.Text) ||
+                 !string.IsNullOrEmpty(TxtCustomerEmail.Text) ||
+                 !string.IsNullOrEmpty(TxtCustomerIdNumber.Text))
                 {
-                    Name = TxtCustomerName.Text,
-                    Surname = TxtCustomerSurname.Text,
-                    Phone = TxtCustomerPhone.Text,
-                    Email = TxtCustomerEmail.Text,
-                    IdentifyNumber = TxtCustomerIdNumber.Text,
+                    Customer customer = new Customer//add user to database
+                    {
+                        Name = TxtCustomerName.Text,
+                        Surname = TxtCustomerSurname.Text,
+                        Phone = TxtCustomerPhone.Text,
+                        Email = TxtCustomerEmail.Text,
+                        IdentifyNumber = TxtCustomerIdNumber.Text,
 
 
-                };
-                _context.Customers.Add(customer);
-                _context.SaveChanges();
+                    };
+                    _context.Customers.Add(customer);
+                    _context.SaveChanges();
+                }
+                else
+                {
+                    MessageBox.Show("Please");
+                }
+                DgvAddCustomer.Rows.Clear();
+                FillCustomers();
+                Clear();
             }
-            else
-            {
-                MessageBox.Show("Please");
-            }
-            DgvAddCustomer.Rows.Clear();
-            FillCustomers();
-            Clear();
+                if (r == DialogResult.No)
+                {
+                    Clear();
+                }           
         }
         //Update Method
         private void BtnCustomerUpdate_Click(object sender, EventArgs e)
         {
-            Customer customer = _context.Customers.Find(_customer.Id);
-            customer.Name = TxtCustomerName.Text;
-            customer.Surname = TxtCustomerSurname.Text;
-            customer.Phone = TxtCustomerPhone.Text;
-            customer.Email = TxtCustomerEmail.Text;
-            customer.IdentifyNumber = TxtCustomerIdNumber.Text;
+            DialogResult r = MessageBox.Show("Are you Sure?", "Yes", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (r == DialogResult.Yes)
+            {
+                Customer customer = _context.Customers.Find(_customer.Id);
+                customer.Name = TxtCustomerName.Text;
+                customer.Surname = TxtCustomerSurname.Text;
+                customer.Phone = TxtCustomerPhone.Text;
+                customer.Email = TxtCustomerEmail.Text;
+                customer.IdentifyNumber = TxtCustomerIdNumber.Text;
 
-            _context.SaveChanges();
-            FillCustomers();
-            Clear();
-        }
+                _context.SaveChanges();
+                FillCustomers();
+                Clear();
+            }
+                if (r == DialogResult.No)
+                {
+                    Clear();
+                }
+            }
         // Delete Method
         private void BtnCustomerDelete_Click(object sender, EventArgs e)
         {
-            _context.Customers.Remove(_customer);
-            _context.SaveChanges();
-            FillCustomers();
-            Clear();
+            DialogResult r = MessageBox.Show("Are you Sure?", "Yes", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (r == DialogResult.Yes)
+            {
+                _context.Customers.Remove(_customer);
+                _context.SaveChanges();
+                DgvAddCustomer.Rows.Clear();
+                FillCustomers();
+                Clear();
+            }
+
         }
 
-        private void DgvAddCustomer_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+         private void DgvAddCustomer_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             TxtCustomerName.Text = _customer.Name;
             TxtCustomerSurname.Text = _customer.Surname;
