@@ -28,57 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.BtnReturnBook = new System.Windows.Forms.Button();
-            this.BtnFollow = new System.Windows.Forms.Button();
-            this.BtnCreateOrder = new System.Windows.Forms.Button();
             this.BtnBook = new System.Windows.Forms.Button();
             this.BtnUser = new System.Windows.Forms.Button();
             this.BtnCustomer = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.BtnOrder = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.BtnReturnBook);
-            this.groupBox1.Controls.Add(this.BtnFollow);
-            this.groupBox1.Controls.Add(this.BtnCreateOrder);
-            this.groupBox1.Location = new System.Drawing.Point(30, 260);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(275, 143);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // BtnReturnBook
-            // 
-            this.BtnReturnBook.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnReturnBook.Location = new System.Drawing.Point(44, 57);
-            this.BtnReturnBook.Name = "BtnReturnBook";
-            this.BtnReturnBook.Size = new System.Drawing.Size(154, 23);
-            this.BtnReturnBook.TabIndex = 2;
-            this.BtnReturnBook.Text = "Kitab Qaytarma";
-            this.BtnReturnBook.UseVisualStyleBackColor = false;
-            // 
-            // BtnFollow
-            // 
-            this.BtnFollow.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnFollow.Location = new System.Drawing.Point(46, 98);
-            this.BtnFollow.Name = "BtnFollow";
-            this.BtnFollow.Size = new System.Drawing.Size(154, 23);
-            this.BtnFollow.TabIndex = 1;
-            this.BtnFollow.Text = "Kitab Qaytaranları İzləmə";
-            this.BtnFollow.UseVisualStyleBackColor = false;
-            // 
-            // BtnCreateOrder
-            // 
-            this.BtnCreateOrder.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnCreateOrder.Location = new System.Drawing.Point(46, 19);
-            this.BtnCreateOrder.Name = "BtnCreateOrder";
-            this.BtnCreateOrder.Size = new System.Drawing.Size(154, 23);
-            this.BtnCreateOrder.TabIndex = 0;
-            this.BtnCreateOrder.Text = "Sifarış Yaratma";
-            this.BtnCreateOrder.UseVisualStyleBackColor = false;
             // 
             // BtnBook
             // 
@@ -116,31 +70,39 @@
             this.BtnCustomer.UseVisualStyleBackColor = false;
             this.BtnCustomer.Click += new System.EventHandler(this.BtnCustomer_Click);
             // 
+            // BtnOrder
+            // 
+            this.BtnOrder.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOrder.Location = new System.Drawing.Point(344, 12);
+            this.BtnOrder.Name = "BtnOrder";
+            this.BtnOrder.Size = new System.Drawing.Size(99, 33);
+            this.BtnOrder.TabIndex = 12;
+            this.BtnOrder.Text = "Order";
+            this.BtnOrder.UseVisualStyleBackColor = false;
+            this.BtnOrder.Click += new System.EventHandler(this.BtnOrder_Click);
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(856, 514);
+            this.Controls.Add(this.BtnOrder);
             this.Controls.Add(this.BtnCustomer);
             this.Controls.Add(this.BtnUser);
             this.Controls.Add(this.BtnBook);
-            this.Controls.Add(this.groupBox1);
             this.Name = "DashboardForm";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button BtnReturnBook;
-        private System.Windows.Forms.Button BtnFollow;
-        private System.Windows.Forms.Button BtnCreateOrder;
         private System.Windows.Forms.Button BtnBook;
         private System.Windows.Forms.Button BtnUser;
         private System.Windows.Forms.Button BtnCustomer;
+        private System.Windows.Forms.Button BtnOrder;
     }
 }

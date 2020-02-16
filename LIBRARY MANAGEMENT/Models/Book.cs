@@ -26,6 +26,7 @@ namespace LIBRARY_MANAGEMENT.Models
         public double RentalPrice { get; set; }        
         public int Count { get; set; }
         public Genre Genre { get; set; }
+        public List<Order> Orders { get; set; }
 
 
 

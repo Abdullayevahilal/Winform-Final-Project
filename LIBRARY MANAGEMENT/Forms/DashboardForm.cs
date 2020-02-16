@@ -47,5 +47,14 @@ namespace LIBRARY_MANAGEMENT.Forms
             this.Close();
             return;
         }
+
+        private void BtnOrder_Click(object sender, EventArgs e)
+        {
+            OrderForm Order = new OrderForm();
+            Order.ShowDialog();
+
+            this.Close();
+            return;
+        }
     }
 }

@@ -54,6 +54,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -90,6 +91,12 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +114,14 @@
     <Compile Include="Migrations\202002121252097_OrderCreat.cs" />
     <Compile Include="Migrations\202002121252097_OrderCreat.designer.cs">
       <DependentUpon>202002121252097_OrderCreat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002151202437_initial.cs" />
+    <Compile Include="Migrations\202002151202437_initial.designer.cs">
+      <DependentUpon>202002151202437_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002152117284_CreateOrders.cs" />
+    <Compile Include="Migrations\202002152117284_CreateOrders.designer.cs">
+      <DependentUpon>202002152117284_CreateOrders.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
@@ -130,6 +145,9 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +159,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002121252097_OrderCreat.resx">
       <DependentUpon>202002121252097_OrderCreat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002151202437_initial.resx">
+      <DependentUpon>202002151202437_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002152117284_CreateOrders.resx">
+      <DependentUpon>202002152117284_CreateOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

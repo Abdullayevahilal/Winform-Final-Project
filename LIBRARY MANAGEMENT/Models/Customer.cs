@@ -30,7 +30,7 @@ namespace LIBRARY_MANAGEMENT.Models
         public string IdentifyNumber { get; set; }
 
 
-
+        public List<Order> Orders { get; set; }
 
 
 
