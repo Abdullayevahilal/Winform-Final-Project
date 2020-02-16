@@ -50,6 +50,9 @@
             // 
             // DgvReturnOrderBook
             // 
+            this.DgvReturnOrderBook.AllowUserToAddRows = false;
+            this.DgvReturnOrderBook.AllowUserToDeleteRows = false;
+            this.DgvReturnOrderBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvReturnOrderBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvReturnOrderBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -62,49 +65,59 @@
             this.Column8});
             this.DgvReturnOrderBook.Location = new System.Drawing.Point(5, 176);
             this.DgvReturnOrderBook.Name = "DgvReturnOrderBook";
+            this.DgvReturnOrderBook.ReadOnly = true;
             this.DgvReturnOrderBook.Size = new System.Drawing.Size(745, 262);
             this.DgvReturnOrderBook.TabIndex = 0;
+            this.DgvReturnOrderBook.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvReturnOrderBook_RowHeaderMouseClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Id";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Costumer Name";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Customer Surname";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Book Name";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Book Count";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Order Time";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Deadline";
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Book Price";
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // LblFindCustomer
             // 
@@ -164,6 +177,7 @@
             this.BtnReturnBook.TabIndex = 14;
             this.BtnReturnBook.Text = "Return Book";
             this.BtnReturnBook.UseVisualStyleBackColor = false;
+            this.BtnReturnBook.Click += new System.EventHandler(this.BtnReturnBook_Click);
             // 
             // LblReturnTime
             // 

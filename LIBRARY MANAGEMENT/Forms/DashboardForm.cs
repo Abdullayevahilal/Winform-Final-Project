@@ -26,44 +26,35 @@ namespace LIBRARY_MANAGEMENT.Forms
         { 
             BookForm book = new BookForm();
             book.ShowDialog();
-            this.Hide();
-            return;
         }
         //Open UserForm
         private void BtnUser_Click(object sender, EventArgs e)
         {
             UserForm user = new UserForm();
             user.ShowDialog();
-
-            this.Hide();
-            return;
         }
         //Open CustomerForm
         private void BtnCustomer_Click(object sender, EventArgs e)
         {
             CustomerForm Customer = new CustomerForm();
             Customer.ShowDialog();
-
-            this.Hide();
-            return;
         }
 
         private void BtnOrder_Click(object sender, EventArgs e)
         {
             OrderForm Order = new OrderForm();
             Order.ShowDialog();
-
-            this.Hide();
-            return;
         }
 
         private void BtnReturnBook_Click(object sender, EventArgs e)
         {
             ReturnOrderBookForm Return = new ReturnOrderBookForm();
             Return.ShowDialog();
+        }
 
-            this.Hide();
-            return;
+        private void DashboardForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -109,6 +109,7 @@
             this.Name = "DashboardForm";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DashboardForm_FormClosed);
             this.ResumeLayout(false);
 
         }

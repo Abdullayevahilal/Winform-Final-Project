@@ -40,18 +40,21 @@ namespace LIBRARY_MANAGEMENT.Forms
                                   item.BookCount,
                                   item.OrderTime.ToString("dd.MM.yyyy"),
                                   item.DeadLine.ToString("dd.MM.yyyy"),
-                                 item.BookPrice);
+                                  item.Books.RentalPrice);
             }
 
+        }
+
+        private void DgvReturnOrderBook_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var id = Convert.ToInt32(DgvReturnOrderBook.Rows[e.RowIndex].Cells[0].Value.ToString());
+            _selectedOrder = _context.Orders.Find(id);
         }
 
         private void BtnCustomerSearch_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtReturnBookCustomer.Text))
             {
-                //    MessageBox.Show("Please,Add Customer Name");
-                //return;
-
                 var customer = _context.Orders.Where(c => (TxtReturnBookCustomer.Text != string.Empty ? c.Customers.Name.Contains(TxtReturnBookCustomer.Text) : false))
                                                .ToList();
 
@@ -66,10 +69,22 @@ namespace LIBRARY_MANAGEMENT.Forms
                                       item.BookCount,
                                       item.OrderTime,
                                       item.DeadLine,
-                                     item.BookPrice);
+                                      item.Books.RentalPrice);
                 }
             }
 
         }
+
+        private void BtnReturnBook_Click(object sender, EventArgs e)
+        {
+            _selectedOrder.Status = true;
+            _context.Orders.FirstOrDefault(s => s.Id == _selectedOrder.Id).Status = _selectedOrder.Status;
+            _context.SaveChanges();
+            DgvReturnOrderBook.Rows.Clear();
+            FillOrder();
+
+        }
+
+       
     }
 }
