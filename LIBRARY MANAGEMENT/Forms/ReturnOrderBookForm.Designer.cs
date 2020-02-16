@@ -65,10 +65,10 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.DgvReturnOrderBook.Location = new System.Drawing.Point(5, 176);
+            this.DgvReturnOrderBook.Location = new System.Drawing.Point(6, 176);
             this.DgvReturnOrderBook.Name = "DgvReturnOrderBook";
             this.DgvReturnOrderBook.ReadOnly = true;
-            this.DgvReturnOrderBook.Size = new System.Drawing.Size(745, 262);
+            this.DgvReturnOrderBook.Size = new System.Drawing.Size(869, 262);
             this.DgvReturnOrderBook.TabIndex = 0;
             this.DgvReturnOrderBook.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvReturnOrderBook_RowHeaderMouseClick);
             // 
@@ -125,7 +125,7 @@
             // 
             this.LblFindCustomer.AutoSize = true;
             this.LblFindCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFindCustomer.Location = new System.Drawing.Point(12, 31);
+            this.LblFindCustomer.Location = new System.Drawing.Point(14, 31);
             this.LblFindCustomer.Name = "LblFindCustomer";
             this.LblFindCustomer.Size = new System.Drawing.Size(100, 15);
             this.LblFindCustomer.TabIndex = 1;
@@ -133,9 +133,9 @@
             // 
             // TxtReturnBookCustomer
             // 
-            this.TxtReturnBookCustomer.Location = new System.Drawing.Point(136, 31);
+            this.TxtReturnBookCustomer.Location = new System.Drawing.Point(134, 31);
             this.TxtReturnBookCustomer.Name = "TxtReturnBookCustomer";
-            this.TxtReturnBookCustomer.Size = new System.Drawing.Size(139, 20);
+            this.TxtReturnBookCustomer.Size = new System.Drawing.Size(161, 20);
             this.TxtReturnBookCustomer.TabIndex = 4;
             // 
             // BtnCustomerSearch
@@ -143,9 +143,9 @@
             this.BtnCustomerSearch.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnCustomerSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCustomerSearch.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnCustomerSearch.Location = new System.Drawing.Point(301, 24);
+            this.BtnCustomerSearch.Location = new System.Drawing.Point(312, 24);
             this.BtnCustomerSearch.Name = "BtnCustomerSearch";
-            this.BtnCustomerSearch.Size = new System.Drawing.Size(92, 29);
+            this.BtnCustomerSearch.Size = new System.Drawing.Size(86, 29);
             this.BtnCustomerSearch.TabIndex = 11;
             this.BtnCustomerSearch.Text = "Search";
             this.BtnCustomerSearch.UseVisualStyleBackColor = false;
@@ -153,16 +153,16 @@
             // 
             // TxtDebt
             // 
-            this.TxtDebt.Location = new System.Drawing.Point(136, 77);
+            this.TxtDebt.Location = new System.Drawing.Point(679, 31);
             this.TxtDebt.Name = "TxtDebt";
-            this.TxtDebt.Size = new System.Drawing.Size(139, 20);
+            this.TxtDebt.Size = new System.Drawing.Size(161, 20);
             this.TxtDebt.TabIndex = 12;
             // 
             // LblTotalPrice
             // 
             this.LblTotalPrice.AutoSize = true;
             this.LblTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTotalPrice.Location = new System.Drawing.Point(9, 82);
+            this.LblTotalPrice.Location = new System.Drawing.Point(567, 32);
             this.LblTotalPrice.Name = "LblTotalPrice";
             this.LblTotalPrice.Size = new System.Drawing.Size(76, 15);
             this.LblTotalPrice.TabIndex = 13;
@@ -173,9 +173,9 @@
             this.BtnReturnBook.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnReturnBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnReturnBook.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnReturnBook.Location = new System.Drawing.Point(601, 119);
+            this.BtnReturnBook.Location = new System.Drawing.Point(355, 115);
             this.BtnReturnBook.Name = "BtnReturnBook";
-            this.BtnReturnBook.Size = new System.Drawing.Size(149, 43);
+            this.BtnReturnBook.Size = new System.Drawing.Size(174, 43);
             this.BtnReturnBook.TabIndex = 14;
             this.BtnReturnBook.Text = "Return Book";
             this.BtnReturnBook.UseVisualStyleBackColor = false;
@@ -185,7 +185,7 @@
             // 
             this.LblReturnTime.AutoSize = true;
             this.LblReturnTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblReturnTime.Location = new System.Drawing.Point(8, 124);
+            this.LblReturnTime.Location = new System.Drawing.Point(14, 84);
             this.LblReturnTime.Name = "LblReturnTime";
             this.LblReturnTime.Size = new System.Drawing.Size(86, 15);
             this.LblReturnTime.TabIndex = 15;
@@ -193,23 +193,24 @@
             // 
             // DtpReturnTime
             // 
-            this.DtpReturnTime.Location = new System.Drawing.Point(109, 119);
+            this.DtpReturnTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DtpReturnTime.Location = new System.Drawing.Point(132, 80);
             this.DtpReturnTime.Name = "DtpReturnTime";
-            this.DtpReturnTime.Size = new System.Drawing.Size(200, 20);
+            this.DtpReturnTime.Size = new System.Drawing.Size(161, 20);
             this.DtpReturnTime.TabIndex = 17;
             // 
             // TxtLate
             // 
-            this.TxtLate.Location = new System.Drawing.Point(409, 77);
+            this.TxtLate.Location = new System.Drawing.Point(679, 71);
             this.TxtLate.Name = "TxtLate";
-            this.TxtLate.Size = new System.Drawing.Size(139, 20);
+            this.TxtLate.Size = new System.Drawing.Size(161, 20);
             this.TxtLate.TabIndex = 18;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(315, 79);
+            this.label1.Location = new System.Drawing.Point(567, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 15);
             this.label1.TabIndex = 19;
@@ -217,9 +218,9 @@
             // 
             // ReturnOrderBookForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 450);
+            this.ClientSize = new System.Drawing.Size(889, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtLate);
             this.Controls.Add(this.DtpReturnTime);
@@ -231,6 +232,7 @@
             this.Controls.Add(this.TxtReturnBookCustomer);
             this.Controls.Add(this.LblFindCustomer);
             this.Controls.Add(this.DgvReturnOrderBook);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ReturnOrderBookForm";
             this.Text = "ReturnBookForm";
             ((System.ComponentModel.ISupportInitialize)(this.DgvReturnOrderBook)).EndInit();
