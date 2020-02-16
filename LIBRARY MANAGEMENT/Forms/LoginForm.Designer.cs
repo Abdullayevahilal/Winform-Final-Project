@@ -39,7 +39,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(357, 258);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -50,7 +50,7 @@
             // 
             this.LblPassword.AutoSize = true;
             this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPassword.Location = new System.Drawing.Point(67, 107);
+            this.LblPassword.Location = new System.Drawing.Point(39, 107);
             this.LblPassword.Name = "LblPassword";
             this.LblPassword.Size = new System.Drawing.Size(79, 18);
             this.LblPassword.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             this.LblEmail.AutoSize = true;
             this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.Location = new System.Drawing.Point(64, 67);
+            this.LblEmail.Location = new System.Drawing.Point(42, 67);
             this.LblEmail.Name = "LblEmail";
             this.LblEmail.Size = new System.Drawing.Size(81, 18);
             this.LblEmail.TabIndex = 2;
@@ -69,9 +69,9 @@
             // BtnEnter
             // 
             this.BtnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEnter.Location = new System.Drawing.Point(157, 142);
+            this.BtnEnter.Location = new System.Drawing.Point(131, 142);
             this.BtnEnter.Name = "BtnEnter";
-            this.BtnEnter.Size = new System.Drawing.Size(157, 23);
+            this.BtnEnter.Size = new System.Drawing.Size(157, 33);
             this.BtnEnter.TabIndex = 3;
             this.BtnEnter.Text = "LOG IN";
             this.BtnEnter.UseVisualStyleBackColor = true;
@@ -79,21 +79,24 @@
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(157, 66);
+            this.TxtEmail.Location = new System.Drawing.Point(136, 66);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(157, 20);
             this.TxtEmail.TabIndex = 4;
+            this.TxtEmail.Text = "yolchu@code.edu.az";
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Location = new System.Drawing.Point(157, 107);
+            this.TxtPassword.Location = new System.Drawing.Point(135, 107);
             this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.Size = new System.Drawing.Size(157, 20);
             this.TxtPassword.TabIndex = 5;
+            this.TxtPassword.Text = "123456";
             // 
             // LoginForm
             // 
-            this.ClientSize = new System.Drawing.Size(357, 261);
+            this.ClientSize = new System.Drawing.Size(351, 261);
             this.Controls.Add(this.LblEmail);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtEmail);
@@ -101,7 +104,6 @@
             this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.pictureBox1);
             this.Name = "LoginForm";
-         
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

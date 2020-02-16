@@ -21,10 +21,10 @@ namespace LIBRARY_MANAGEMENT.Forms
         private readonly LibraryDbContext _context;
         public BookForm()
         {
-            
+
             InitializeComponent();
             _context = new LibraryDbContext();
-            
+
             FillDataGenre();
         }
         //FillBooks
@@ -42,7 +42,7 @@ namespace LIBRARY_MANAGEMENT.Forms
                                      item.Count);
             }
         }
-         private void FillDataGenre()
+        private void FillDataGenre()
         {
             List<Genre> genres = _context.Genres.ToList();
             foreach (Genre item in genres)
@@ -54,7 +54,7 @@ namespace LIBRARY_MANAGEMENT.Forms
                 };
                 CmbGenre.Items.Add(combobox);
             }
-        }            
+        }
         private void Clear()
         {
             TxtBookName.Clear();
@@ -63,7 +63,7 @@ namespace LIBRARY_MANAGEMENT.Forms
             TxtRentalPrice.Clear();
             CmbGenre.SelectedItem = null;
         }
-        
+
         private void DgvAddBooks_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             _id = (int)DgvAddBooks.Rows[e.RowIndex].Cells[0].Value;
@@ -152,11 +152,24 @@ namespace LIBRARY_MANAGEMENT.Forms
         //Delete Method
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            _context.Books.Remove(_book);
-            _context.SaveChanges();
-            FillBooks();
-            Clear();
-        }
+            DialogResult r = MessageBox.Show("Delete?", "Are you sure?", MessageBoxButtons.YesNo);
+            if (r == DialogResult.Yes)
+                
+            //Clear();
+            { 
+                _context.Books.Remove(_book);
+                _context.SaveChanges();
+                DgvAddBooks.Rows.Clear();             
+                FillBooks();
+                Clear();
+
+
+            }
+            if(r == DialogResult.No)
+            {
+                Clear();
+            }
+    }
 
         private void BookForm_Load(object sender, EventArgs e)
         {

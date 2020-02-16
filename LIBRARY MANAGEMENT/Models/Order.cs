@@ -14,10 +14,18 @@ namespace LIBRARY_MANAGEMENT.Models
     {
         public int Id { get; set; }
        
+        [Column(TypeName ="bit")]
+        public bool Status { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime OrderTime { get; set; }
         [Column(TypeName = "date")]
         public DateTime DeadLine { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime ReturnTime { get; set; }
         public int? BookCount { get; set; }
+        public double BookPrice { get; set; }
         public double TotalPrice { get; set; }
+
         [ForeignKey("Managers")]
         public int? ManagerId { get; set; }
         [ForeignKey("Customers")]

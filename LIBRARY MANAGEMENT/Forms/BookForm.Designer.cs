@@ -127,9 +127,10 @@
             // 
             // BtnBookAdd
             // 
-            this.BtnBookAdd.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnBookAdd.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnBookAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBookAdd.Location = new System.Drawing.Point(14, 83);
+            this.BtnBookAdd.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnBookAdd.Location = new System.Drawing.Point(48, 85);
             this.BtnBookAdd.Name = "BtnBookAdd";
             this.BtnBookAdd.Size = new System.Drawing.Size(96, 37);
             this.BtnBookAdd.TabIndex = 11;
@@ -139,9 +140,10 @@
             // 
             // BtnUpdate
             // 
-            this.BtnUpdate.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnUpdate.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUpdate.Location = new System.Drawing.Point(125, 85);
+            this.BtnUpdate.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnUpdate.Location = new System.Drawing.Point(169, 85);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(86, 35);
             this.BtnUpdate.TabIndex = 12;
@@ -151,8 +153,9 @@
             // 
             // BtnDelete
             // 
-            this.BtnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BtnDelete.Location = new System.Drawing.Point(232, 85);
+            this.BtnDelete.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BtnDelete.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnDelete.Location = new System.Drawing.Point(278, 83);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(86, 35);
             this.BtnDelete.TabIndex = 13;
@@ -162,10 +165,11 @@
             // 
             // BtnSearch
             // 
-            this.BtnSearch.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BtnSearch.Location = new System.Drawing.Point(344, 86);
+            this.BtnSearch.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BtnSearch.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnSearch.Location = new System.Drawing.Point(393, 84);
             this.BtnSearch.Name = "BtnSearch";
-            this.BtnSearch.Size = new System.Drawing.Size(75, 34);
+            this.BtnSearch.Size = new System.Drawing.Size(90, 34);
             this.BtnSearch.TabIndex = 14;
             this.BtnSearch.Text = "Search";
             this.BtnSearch.UseVisualStyleBackColor = false;
@@ -184,7 +188,7 @@
             this.Column6});
             this.DgvAddBooks.Location = new System.Drawing.Point(3, 172);
             this.DgvAddBooks.Name = "DgvAddBooks";
-            this.DgvAddBooks.Size = new System.Drawing.Size(504, 241);
+            this.DgvAddBooks.Size = new System.Drawing.Size(586, 241);
             this.DgvAddBooks.TabIndex = 15;
             this.DgvAddBooks.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddBooks_CellMouseClick);
             this.DgvAddBooks.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddBooks_RowHeaderMouseClick);
@@ -232,8 +236,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(833, 425);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(589, 425);
             this.Controls.Add(this.CmbGenre);
             this.Controls.Add(this.DgvAddBooks);
             this.Controls.Add(this.BtnSearch);
@@ -251,7 +255,7 @@
             this.Controls.Add(this.TxtBookName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "BookForm";
-            this.Text = "Book";
+            this.Text = "Books";
             this.Load += new System.EventHandler(this.BookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvAddBooks)).EndInit();
             this.ResumeLayout(false);

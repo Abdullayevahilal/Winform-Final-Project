@@ -55,88 +55,89 @@
             // LblName
             // 
             this.LblName.AutoSize = true;
-            this.LblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblName.Location = new System.Drawing.Point(16, 10);
             this.LblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblName.Name = "LblName";
-            this.LblName.Size = new System.Drawing.Size(39, 13);
+            this.LblName.Size = new System.Drawing.Size(45, 15);
             this.LblName.TabIndex = 1;
             this.LblName.Text = "Name";
             // 
             // LblSurname
             // 
             this.LblSurname.AutoSize = true;
-            this.LblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSurname.Location = new System.Drawing.Point(147, 10);
+            this.LblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSurname.Location = new System.Drawing.Point(119, 10);
             this.LblSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSurname.Name = "LblSurname";
-            this.LblSurname.Size = new System.Drawing.Size(56, 13);
+            this.LblSurname.Size = new System.Drawing.Size(65, 15);
             this.LblSurname.TabIndex = 2;
             this.LblSurname.Text = "Surname";
             // 
             // LblPhone
             // 
             this.LblPhone.AutoSize = true;
-            this.LblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPhone.Location = new System.Drawing.Point(283, 10);
+            this.LblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPhone.Location = new System.Drawing.Point(218, 10);
             this.LblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPhone.Name = "LblPhone";
-            this.LblPhone.Size = new System.Drawing.Size(43, 13);
+            this.LblPhone.Size = new System.Drawing.Size(48, 15);
             this.LblPhone.TabIndex = 3;
             this.LblPhone.Text = "Phone";
             // 
             // TxtCustomerName
             // 
-            this.TxtCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCustomerName.Location = new System.Drawing.Point(16, 29);
             this.TxtCustomerName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtCustomerName.Name = "TxtCustomerName";
-            this.TxtCustomerName.Size = new System.Drawing.Size(108, 20);
+            this.TxtCustomerName.Size = new System.Drawing.Size(86, 21);
             this.TxtCustomerName.TabIndex = 4;
             // 
             // TxtCustomerSurname
             // 
-            this.TxtCustomerSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCustomerSurname.Location = new System.Drawing.Point(145, 29);
+            this.TxtCustomerSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerSurname.Location = new System.Drawing.Point(122, 28);
             this.TxtCustomerSurname.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtCustomerSurname.Name = "TxtCustomerSurname";
-            this.TxtCustomerSurname.Size = new System.Drawing.Size(116, 20);
+            this.TxtCustomerSurname.Size = new System.Drawing.Size(84, 21);
             this.TxtCustomerSurname.TabIndex = 5;
             // 
             // TxtCustomerPhone
             // 
-            this.TxtCustomerPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCustomerPhone.Location = new System.Drawing.Point(282, 29);
+            this.TxtCustomerPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerPhone.Location = new System.Drawing.Point(221, 28);
             this.TxtCustomerPhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtCustomerPhone.Name = "TxtCustomerPhone";
-            this.TxtCustomerPhone.Size = new System.Drawing.Size(123, 20);
+            this.TxtCustomerPhone.Size = new System.Drawing.Size(95, 21);
             this.TxtCustomerPhone.TabIndex = 6;
             // 
             // TxtCustomerEmail
             // 
-            this.TxtCustomerEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCustomerEmail.Location = new System.Drawing.Point(424, 29);
+            this.TxtCustomerEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerEmail.Location = new System.Drawing.Point(337, 28);
             this.TxtCustomerEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtCustomerEmail.Name = "TxtCustomerEmail";
-            this.TxtCustomerEmail.Size = new System.Drawing.Size(131, 20);
+            this.TxtCustomerEmail.Size = new System.Drawing.Size(86, 21);
             this.TxtCustomerEmail.TabIndex = 7;
             // 
             // LblCustomerEmail
             // 
             this.LblCustomerEmail.AutoSize = true;
-            this.LblCustomerEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCustomerEmail.Location = new System.Drawing.Point(424, 10);
+            this.LblCustomerEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCustomerEmail.Location = new System.Drawing.Point(334, 10);
             this.LblCustomerEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblCustomerEmail.Name = "LblCustomerEmail";
-            this.LblCustomerEmail.Size = new System.Drawing.Size(37, 13);
+            this.LblCustomerEmail.Size = new System.Drawing.Size(44, 15);
             this.LblCustomerEmail.TabIndex = 10;
             this.LblCustomerEmail.Text = "Email";
             // 
             // BtnCustomerSearch
             // 
-            this.BtnCustomerSearch.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnCustomerSearch.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnCustomerSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCustomerSearch.Location = new System.Drawing.Point(425, 98);
+            this.BtnCustomerSearch.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCustomerSearch.Location = new System.Drawing.Point(398, 104);
             this.BtnCustomerSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnCustomerSearch.Name = "BtnCustomerSearch";
             this.BtnCustomerSearch.Size = new System.Drawing.Size(93, 39);
@@ -147,9 +148,10 @@
             // 
             // BtnCustomerDelete
             // 
-            this.BtnCustomerDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnCustomerDelete.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnCustomerDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCustomerDelete.Location = new System.Drawing.Point(303, 97);
+            this.BtnCustomerDelete.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCustomerDelete.Location = new System.Drawing.Point(285, 103);
             this.BtnCustomerDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnCustomerDelete.Name = "BtnCustomerDelete";
             this.BtnCustomerDelete.Size = new System.Drawing.Size(93, 40);
@@ -160,9 +162,10 @@
             // 
             // BtnCustomerUpdate
             // 
-            this.BtnCustomerUpdate.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnCustomerUpdate.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnCustomerUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCustomerUpdate.Location = new System.Drawing.Point(175, 97);
+            this.BtnCustomerUpdate.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCustomerUpdate.Location = new System.Drawing.Point(171, 103);
             this.BtnCustomerUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnCustomerUpdate.Name = "BtnCustomerUpdate";
             this.BtnCustomerUpdate.Size = new System.Drawing.Size(95, 40);
@@ -173,9 +176,10 @@
             // 
             // BtnCustomerAdd
             // 
-            this.BtnCustomerAdd.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnCustomerAdd.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnCustomerAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCustomerAdd.Location = new System.Drawing.Point(33, 95);
+            this.BtnCustomerAdd.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCustomerAdd.Location = new System.Drawing.Point(40, 100);
             this.BtnCustomerAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnCustomerAdd.Name = "BtnCustomerAdd";
             this.BtnCustomerAdd.Size = new System.Drawing.Size(96, 43);
@@ -194,10 +198,10 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.DgvAddCustomer.Location = new System.Drawing.Point(16, 195);
+            this.DgvAddCustomer.Location = new System.Drawing.Point(2, 193);
             this.DgvAddCustomer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DgvAddCustomer.Name = "DgvAddCustomer";
-            this.DgvAddCustomer.Size = new System.Drawing.Size(551, 264);
+            this.DgvAddCustomer.Size = new System.Drawing.Size(544, 264);
             this.DgvAddCustomer.TabIndex = 34;
             this.DgvAddCustomer.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddCustomer_CellMouseClick);
             this.DgvAddCustomer.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddCustomer_RowHeaderMouseClick);
@@ -235,21 +239,21 @@
             // 
             // TxtCustomerIdNumber
             // 
-            this.TxtCustomerIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCustomerIdNumber.Location = new System.Drawing.Point(574, 29);
+            this.TxtCustomerIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCustomerIdNumber.Location = new System.Drawing.Point(440, 28);
             this.TxtCustomerIdNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtCustomerIdNumber.Name = "TxtCustomerIdNumber";
-            this.TxtCustomerIdNumber.Size = new System.Drawing.Size(118, 20);
+            this.TxtCustomerIdNumber.Size = new System.Drawing.Size(85, 21);
             this.TxtCustomerIdNumber.TabIndex = 35;
             // 
             // LblIdNumber
             // 
             this.LblIdNumber.AutoSize = true;
-            this.LblIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblIdNumber.Location = new System.Drawing.Point(573, 10);
+            this.LblIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblIdNumber.Location = new System.Drawing.Point(444, 10);
             this.LblIdNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblIdNumber.Name = "LblIdNumber";
-            this.LblIdNumber.Size = new System.Drawing.Size(67, 13);
+            this.LblIdNumber.Size = new System.Drawing.Size(76, 15);
             this.LblIdNumber.TabIndex = 36;
             this.LblIdNumber.Text = "ID Number";
             // 
@@ -258,7 +262,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(788, 453);
+            this.ClientSize = new System.Drawing.Size(573, 453);
             this.Controls.Add(this.TxtCustomerIdNumber);
             this.Controls.Add(this.LblIdNumber);
             this.Controls.Add(this.DgvAddCustomer);
@@ -277,7 +281,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "CustomerForm";
-            this.Text = "CustomerForm";
+            this.Text = "Customers";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvAddCustomer)).EndInit();
             this.ResumeLayout(false);

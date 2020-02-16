@@ -97,6 +97,12 @@
     <Compile Include="Forms\OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ReturnOrderBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReturnOrderBookForm.Designer.cs">
+      <DependentUpon>ReturnOrderBookForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,10 @@
     <Compile Include="Migrations\202002152117284_CreateOrders.designer.cs">
       <DependentUpon>202002152117284_CreateOrders.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002161139469_ChangeOrder.cs" />
+    <Compile Include="Migrations\202002161139469_ChangeOrder.designer.cs">
+      <DependentUpon>202002161139469_ChangeOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\CmbCombobox.cs" />
@@ -148,6 +158,9 @@
     <EmbeddedResource Include="Forms\OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReturnOrderBookForm.resx">
+      <DependentUpon>ReturnOrderBookForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002152117284_CreateOrders.resx">
       <DependentUpon>202002152117284_CreateOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002161139469_ChangeOrder.resx">
+      <DependentUpon>202002161139469_ChangeOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CryptoHelper;
+//using CryptoHelper;
 using LIBRARY_MANAGEMENT.Data;
 using LIBRARY_MANAGEMENT.Models;
 using LIBRARY_MANAGEMENT.Forms;
@@ -26,8 +26,7 @@ namespace LIBRARY_MANAGEMENT.Forms
 
         private void BtnEnter_Click(object sender, EventArgs e)
         {
-            //TxtEmail.Text = (Crypto.HashPassword("4202084"));
-            //MessageBox.Show(Crypto.HashPassword("4202084"));
+            
             if (string.IsNullOrEmpty(TxtEmail.Text))
             {
                 MessageBox.Show("E-Poçt Yazın");
@@ -40,10 +39,11 @@ namespace LIBRARY_MANAGEMENT.Forms
                 return;
             }
 
-            Manager manager = _context.Managers.FirstOrDefault
-                (m => m.Status && m.Email == TxtEmail.Text);
-            
-            if (manager != null && Crypto.VerifyHashedPassword(manager.Password,TxtPassword.Text))
+            //Manager manager = _context.Managers.FirstOrDefault
+            //    (m => m.Status && m.Email == TxtEmail.Text);
+            Manager manager = _context.Managers.FirstOrDefault(u => u.Status && u.Email == TxtEmail.Text && u.Password == TxtPassword.Text);
+
+            if (manager != null /*&& Crypto.VerifyHashedPassword(manager.Password,TxtPassword.Text)*/)
             {
                 DashboardForm dashboard = new DashboardForm();
                

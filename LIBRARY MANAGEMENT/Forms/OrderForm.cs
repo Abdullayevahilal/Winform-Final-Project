@@ -28,6 +28,7 @@ namespace LIBRARY_MANAGEMENT.Forms
             InitializeComponent();
             FillBooks();
             FillCustomers();
+            FillOrder();
 
         }
         //Books
@@ -66,7 +67,7 @@ namespace LIBRARY_MANAGEMENT.Forms
         private void FillOrder()
         {
 
-            var Orders = _context.Orders.Include("Customers").Include("Books").ToList();
+            var Orders = _context.Orders.Include("Customers").Include("Books").OrderByDescending(r=>r.Id).ToList();
             DgvOrder.Rows.Clear();
             foreach (var item in Orders)
             {
@@ -74,9 +75,10 @@ namespace LIBRARY_MANAGEMENT.Forms
                                   item.Customers.Name,
                                   item.Customers.Surname,
                                   item.Books.Name,
-                                  item.DeadLine,
+                                  item.OrderTime.ToString("dd.MM.yyyy"),
+                                  item.DeadLine.ToString("dd.MM.yyyy"),
                                   item.BookCount,
-                                  item.TotalPrice);
+                                  item.Books.RentalPrice* item.BookCount);
             }
           
         }
@@ -164,15 +166,18 @@ namespace LIBRARY_MANAGEMENT.Forms
       //Create Order Method
         private void BtnOrderAdd_Click(object sender, EventArgs e)
         {
-           
-           
-                Order orders = new Order
+            
+            if (DtpOrderTime.Value != DateTime.Now)
+            {
+Order orders = new Order
                 {
                     CustomerId = _selectedCustomer.Id,
                     BookId = _selectedBook.Id,
+                    OrderTime= DateTime.Now,
                     DeadLine = DtpDeadline.Value,
+                    
                     BookCount = Convert.ToInt32(TxtOrderBookCount.Text),
-                    //ToTAL Price yaz
+                    
                 };
 
                 _context.Orders.Add(orders);
@@ -180,9 +185,18 @@ namespace LIBRARY_MANAGEMENT.Forms
                 _context.SaveChanges();
                // DgvOrder.Rows.Clear();
                //DgvFindBook.Rows.Clear();
-            MessageBox.Show("Are you Sure?");
-               FillBooks();
+                //MessageBox.Show("Are you Sure?","Yes",MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                FillBooks();
                FillOrder();
+            }
+            else
+            {
+                MessageBox.Show("qaqa nagarasan");
+                return;
+            }
+           
+                
+           
 
         }
         //Delete Order Method

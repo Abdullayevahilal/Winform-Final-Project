@@ -52,8 +52,9 @@
             // 
             // BtnUserSearch
             // 
-            this.BtnUserSearch.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnUserSearch.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnUserSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUserSearch.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnUserSearch.Location = new System.Drawing.Point(419, 85);
             this.BtnUserSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnUserSearch.Name = "BtnUserSearch";
@@ -65,8 +66,9 @@
             // 
             // BtnUserDelete
             // 
-            this.BtnUserDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnUserDelete.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnUserDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUserDelete.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnUserDelete.Location = new System.Drawing.Point(296, 84);
             this.BtnUserDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnUserDelete.Name = "BtnUserDelete";
@@ -78,8 +80,9 @@
             // 
             // BtnUserUpdate
             // 
-            this.BtnUserUpdate.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnUserUpdate.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnUserUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUserUpdate.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnUserUpdate.Location = new System.Drawing.Point(168, 84);
             this.BtnUserUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnUserUpdate.Name = "BtnUserUpdate";
@@ -91,8 +94,9 @@
             // 
             // BtnUserAdd
             // 
-            this.BtnUserAdd.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BtnUserAdd.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnUserAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUserAdd.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnUserAdd.Location = new System.Drawing.Point(27, 82);
             this.BtnUserAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnUserAdd.Name = "BtnUserAdd";
@@ -106,7 +110,7 @@
             // 
             this.LblEmail.AutoSize = true;
             this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.Location = new System.Drawing.Point(313, 10);
+            this.LblEmail.Location = new System.Drawing.Point(297, 10);
             this.LblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblEmail.Name = "LblEmail";
             this.LblEmail.Size = new System.Drawing.Size(44, 15);
@@ -117,7 +121,7 @@
             // 
             this.LblUserPassword.AutoSize = true;
             this.LblUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUserPassword.Location = new System.Drawing.Point(481, 10);
+            this.LblUserPassword.Location = new System.Drawing.Point(434, 10);
             this.LblUserPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblUserPassword.Name = "LblUserPassword";
             this.LblUserPassword.Size = new System.Drawing.Size(69, 15);
@@ -128,7 +132,7 @@
             // 
             this.LblUserPhone.AutoSize = true;
             this.LblUserPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUserPhone.Location = new System.Drawing.Point(172, 10);
+            this.LblUserPhone.Location = new System.Drawing.Point(164, 10);
             this.LblUserPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblUserPhone.Name = "LblUserPhone";
             this.LblUserPhone.Size = new System.Drawing.Size(48, 15);
@@ -149,28 +153,28 @@
             // TxtPassword
             // 
             this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPassword.Location = new System.Drawing.Point(477, 29);
+            this.TxtPassword.Location = new System.Drawing.Point(433, 29);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(119, 21);
+            this.TxtPassword.Size = new System.Drawing.Size(97, 21);
             this.TxtPassword.TabIndex = 20;
             // 
             // TxtPhone
             // 
             this.TxtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPhone.Location = new System.Drawing.Point(168, 29);
+            this.TxtPhone.Location = new System.Drawing.Point(159, 29);
             this.TxtPhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtPhone.Name = "TxtPhone";
-            this.TxtPhone.Size = new System.Drawing.Size(128, 21);
+            this.TxtPhone.Size = new System.Drawing.Size(115, 21);
             this.TxtPhone.TabIndex = 19;
             // 
             // TxtUserEmail
             // 
             this.TxtUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUserEmail.Location = new System.Drawing.Point(317, 29);
+            this.TxtUserEmail.Location = new System.Drawing.Point(296, 29);
             this.TxtUserEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtUserEmail.Name = "TxtUserEmail";
-            this.TxtUserEmail.Size = new System.Drawing.Size(128, 21);
+            this.TxtUserEmail.Size = new System.Drawing.Size(115, 21);
             this.TxtUserEmail.TabIndex = 18;
             // 
             // TxtFullName
@@ -179,11 +183,14 @@
             this.TxtFullName.Location = new System.Drawing.Point(20, 29);
             this.TxtFullName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtFullName.Name = "TxtFullName";
-            this.TxtFullName.Size = new System.Drawing.Size(120, 21);
+            this.TxtFullName.Size = new System.Drawing.Size(115, 21);
             this.TxtFullName.TabIndex = 17;
             // 
             // DgvAddUsers
             // 
+            this.DgvAddUsers.AllowUserToAddRows = false;
+            this.DgvAddUsers.AllowUserToDeleteRows = false;
+            this.DgvAddUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvAddUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvAddUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -192,10 +199,11 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.DgvAddUsers.Location = new System.Drawing.Point(4, 198);
+            this.DgvAddUsers.Location = new System.Drawing.Point(4, 183);
             this.DgvAddUsers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DgvAddUsers.Name = "DgvAddUsers";
-            this.DgvAddUsers.Size = new System.Drawing.Size(593, 318);
+            this.DgvAddUsers.ReadOnly = true;
+            this.DgvAddUsers.Size = new System.Drawing.Size(521, 226);
             this.DgvAddUsers.TabIndex = 30;
             this.DgvAddUsers.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddUsers_CellMouseClick);
             this.DgvAddUsers.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAddUsers_RowHeaderMouseClick);
@@ -204,39 +212,45 @@
             // 
             this.Column1.HeaderText = "Id";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Status";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Visible = false;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Fullname";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Phone";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Email";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Password";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 519);
+            this.ClientSize = new System.Drawing.Size(538, 421);
             this.Controls.Add(this.DgvAddUsers);
             this.Controls.Add(this.BtnUserSearch);
             this.Controls.Add(this.BtnUserDelete);
@@ -253,7 +267,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "UserForm";
-            this.Text = "UserForm";
+            this.Text = "Users";
             this.Load += new System.EventHandler(this.UserForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvAddUsers)).EndInit();
             this.ResumeLayout(false);

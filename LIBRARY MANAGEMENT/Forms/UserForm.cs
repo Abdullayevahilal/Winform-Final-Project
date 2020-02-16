@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LIBRARY_MANAGEMENT.Data;
 using LIBRARY_MANAGEMENT.Models;
-using CryptoHelper;
 
 namespace LIBRARY_MANAGEMENT.Forms
 {
@@ -27,6 +26,7 @@ namespace LIBRARY_MANAGEMENT.Forms
 
         }
 
+        
         private void FillUsers()
         {
             var ShowUser = _context.Managers.ToList();
@@ -62,7 +62,7 @@ namespace LIBRARY_MANAGEMENT.Forms
                     Fullname = TxtFullName.Text,
                     Phone = TxtPhone.Text,
                     Email = TxtUserEmail.Text,
-                    Password =Crypto.HashPassword(TxtPassword.Text),
+                    Password =TxtPassword.Text,
                     Level = UserLevel.user,
                     Status = true
 

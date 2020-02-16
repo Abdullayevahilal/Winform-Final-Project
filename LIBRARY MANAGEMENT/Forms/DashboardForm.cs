@@ -26,7 +26,7 @@ namespace LIBRARY_MANAGEMENT.Forms
         { 
             BookForm book = new BookForm();
             book.ShowDialog();
-            this.Close();
+            this.Hide();
             return;
         }
         //Open UserForm
@@ -35,7 +35,7 @@ namespace LIBRARY_MANAGEMENT.Forms
             UserForm user = new UserForm();
             user.ShowDialog();
 
-            this.Close();
+            this.Hide();
             return;
         }
         //Open CustomerForm
@@ -44,7 +44,7 @@ namespace LIBRARY_MANAGEMENT.Forms
             CustomerForm Customer = new CustomerForm();
             Customer.ShowDialog();
 
-            this.Close();
+            this.Hide();
             return;
         }
 
@@ -53,7 +53,16 @@ namespace LIBRARY_MANAGEMENT.Forms
             OrderForm Order = new OrderForm();
             Order.ShowDialog();
 
-            this.Close();
+            this.Hide();
+            return;
+        }
+
+        private void BtnReturnBook_Click(object sender, EventArgs e)
+        {
+            ReturnOrderBookForm Return = new ReturnOrderBookForm();
+            Return.ShowDialog();
+
+            this.Hide();
             return;
         }
     }
