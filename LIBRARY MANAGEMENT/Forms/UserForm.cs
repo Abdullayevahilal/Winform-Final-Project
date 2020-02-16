@@ -115,10 +115,14 @@ namespace LIBRARY_MANAGEMENT.Forms
         //Delete Method
         private void BtnUserDelete_Click(object sender, EventArgs e)
         {
-            _context.Managers.Remove(_user);
-            _context.SaveChanges();
-            FillUsers();
-            Clear();
+            DialogResult r = MessageBox.Show("Are you Sure?", "Yes", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (r == DialogResult.Yes)
+            {
+                _context.Managers.Remove(_user);
+                _context.SaveChanges();
+                FillUsers();
+                Clear();
+            }
         }
         //End of Delete Method
         private void DgvAddUsers_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)

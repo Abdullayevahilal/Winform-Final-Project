@@ -152,7 +152,7 @@ namespace LIBRARY_MANAGEMENT.Forms
         //Delete Method
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            DialogResult r = MessageBox.Show("Delete?", "Are you sure?", MessageBoxButtons.YesNo);
+            DialogResult r = MessageBox.Show("Are you Sure?", "Yes", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (r == DialogResult.Yes)
                 
             //Clear();
