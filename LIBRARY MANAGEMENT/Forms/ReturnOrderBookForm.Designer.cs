@@ -40,11 +40,13 @@
             this.LblFindCustomer = new System.Windows.Forms.Label();
             this.TxtReturnBookCustomer = new System.Windows.Forms.TextBox();
             this.BtnCustomerSearch = new System.Windows.Forms.Button();
-            this.TxtTotalPrice = new System.Windows.Forms.TextBox();
+            this.TxtDebt = new System.Windows.Forms.TextBox();
             this.LblTotalPrice = new System.Windows.Forms.Label();
             this.BtnReturnBook = new System.Windows.Forms.Button();
             this.LblReturnTime = new System.Windows.Forms.Label();
             this.DtpReturnTime = new System.Windows.Forms.DateTimePicker();
+            this.TxtLate = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvReturnOrderBook)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,12 +151,12 @@
             this.BtnCustomerSearch.UseVisualStyleBackColor = false;
             this.BtnCustomerSearch.Click += new System.EventHandler(this.BtnCustomerSearch_Click);
             // 
-            // TxtTotalPrice
+            // TxtDebt
             // 
-            this.TxtTotalPrice.Location = new System.Drawing.Point(136, 77);
-            this.TxtTotalPrice.Name = "TxtTotalPrice";
-            this.TxtTotalPrice.Size = new System.Drawing.Size(139, 20);
-            this.TxtTotalPrice.TabIndex = 12;
+            this.TxtDebt.Location = new System.Drawing.Point(136, 77);
+            this.TxtDebt.Name = "TxtDebt";
+            this.TxtDebt.Size = new System.Drawing.Size(139, 20);
+            this.TxtDebt.TabIndex = 12;
             // 
             // LblTotalPrice
             // 
@@ -171,7 +173,7 @@
             this.BtnReturnBook.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtnReturnBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnReturnBook.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnReturnBook.Location = new System.Drawing.Point(466, 82);
+            this.BtnReturnBook.Location = new System.Drawing.Point(601, 119);
             this.BtnReturnBook.Name = "BtnReturnBook";
             this.BtnReturnBook.Size = new System.Drawing.Size(149, 43);
             this.BtnReturnBook.TabIndex = 14;
@@ -196,16 +198,35 @@
             this.DtpReturnTime.Size = new System.Drawing.Size(200, 20);
             this.DtpReturnTime.TabIndex = 17;
             // 
+            // TxtLate
+            // 
+            this.TxtLate.Location = new System.Drawing.Point(409, 77);
+            this.TxtLate.Name = "TxtLate";
+            this.TxtLate.Size = new System.Drawing.Size(139, 20);
+            this.TxtLate.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(315, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 15);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Delayed time";
+            // 
             // ReturnOrderBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TxtLate);
             this.Controls.Add(this.DtpReturnTime);
             this.Controls.Add(this.LblReturnTime);
             this.Controls.Add(this.BtnReturnBook);
             this.Controls.Add(this.LblTotalPrice);
-            this.Controls.Add(this.TxtTotalPrice);
+            this.Controls.Add(this.TxtDebt);
             this.Controls.Add(this.BtnCustomerSearch);
             this.Controls.Add(this.TxtReturnBookCustomer);
             this.Controls.Add(this.LblFindCustomer);
@@ -224,7 +245,7 @@
         private System.Windows.Forms.Label LblFindCustomer;
         private System.Windows.Forms.TextBox TxtReturnBookCustomer;
         private System.Windows.Forms.Button BtnCustomerSearch;
-        private System.Windows.Forms.TextBox TxtTotalPrice;
+        private System.Windows.Forms.TextBox TxtDebt;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -237,5 +258,7 @@
         private System.Windows.Forms.Button BtnReturnBook;
         private System.Windows.Forms.Label LblReturnTime;
         private System.Windows.Forms.DateTimePicker DtpReturnTime;
+        private System.Windows.Forms.TextBox TxtLate;
+        private System.Windows.Forms.Label label1;
     }
 }
