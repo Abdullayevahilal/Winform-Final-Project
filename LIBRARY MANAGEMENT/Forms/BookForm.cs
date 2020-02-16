@@ -170,7 +170,7 @@ namespace LIBRARY_MANAGEMENT.Forms
                 Clear();
             }
     }
-
+        //End Delete Method
         private void BookForm_Load(object sender, EventArgs e)
         {
             FillBooks();
